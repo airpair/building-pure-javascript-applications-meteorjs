@@ -1,3 +1,5 @@
+**Notice:** This article is in draft mode and it will be improved in a few days.
+
 Back in 2012, I was starting my web development career. I already knew HTML, CSS, SQL and a bit PHP. I learned PHP and some PHP frameworks so I could build web applications. I needed to learn jQuery for front-end stuff. Then I learned front-end framework Bootstrap. After a year, I had solid knowledge of full stack web development.
 
 ## I was building applications in PHP
@@ -6,7 +8,7 @@ I was building one larger application in PHP and after a few days I needed to do
 
 ## I found Meteor
 
-One day, I found [Meteor.js](https://meteor.com). I tried it for one project and I wrote an article about it - [Why I love JavaScript and Meteor.js](http://meteor.hromnik.com/blog/why-i-love-javascript-and-meteor-js). I have been developing pure JavaScript applications since end of 2013. I don't need to use PHP anymore. I have tried to write one application in [Express.js](http://expressjs.com/) but then I switched back to Meteor. Express was too lightweight. I have also tried JavaScript frameworks like [Sails.js](http://sailsjs.org/), [Geddy.js](http://geddyjs.org/), [Tower.js](http://tower.github.io/) but they were either too lightweight or something did not work. Meteor worked like a charm. Moreover, Meteor is the only framework which has its own front-end solution ([Blaze](https://www.meteor.com/blaze)). You don't have to think about what front-end framework to use (Angular, Ember,...). And Meteor is real-time from scratch. If you insert or update model in database, the change is published to all connected clients in real-time, WOW.
+One day, I found [Meteor.js](https://meteor.com). I tried it for one project and I wrote an article about it - [Why I love JavaScript and Meteor.js](http://meteor.hromnik.com/blog/why-i-love-javascript-and-meteor-js). I have been developing pure JavaScript applications since end of 2013. I don't need to use PHP anymore. I have tried to write one application in [Express.js](http://expressjs.com/) but then I switched back to Meteor. Express was too lightweight. I have also tried JavaScript frameworks like [Sails.js](http://sailsjs.org/), [Geddy.js](http://geddyjs.org/), [Tower.js](http://tower.github.io/) but they were either too lightweight or something did not work. They also don't have big community and enough learning resources. Meteor worked like a charm and its community is. Moreover, Meteor is the only framework which has its own front-end solution ([Blaze](https://www.meteor.com/blaze)). You don't have to think about what front-end framework to use (Angular, Ember,...). And Meteor is real-time from scratch. If you insert or update model in database, the change is published to all connected clients in real-time, WOW.
 
 ## Key features of Meteor
 
