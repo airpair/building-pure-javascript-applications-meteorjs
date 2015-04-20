@@ -99,7 +99,7 @@ Code above demonstrates communication between client and server via Meteor calls
 - [Josh Owens blog](http://joshowens.me/).
 - [Meteortips](http://meteortips.com/tutorials/) with tutorials, screencasts, blog, book, etc.
 - [Evented Mind](https://www.eventedmind.com/) screencasts.
-- [Build Your First Real-Time Application with MeteorJS](udemy.com/build-your-first-real-time-web-application-with-meteorjs/) video course.
+- [Build Your First Real-Time Application with MeteorJS](https://www.udemy.com/build-your-first-real-time-web-application-with-meteorjs/) video course.
 - Extensive article [Learn Meteor.js Properly](http://javascriptissexy.com/learn-meteor-js-properly/).
 - And a lot of other resources can be found in [this blog](https://www.yauh.de/best-learning-resources-for-meteorjs/).
 
