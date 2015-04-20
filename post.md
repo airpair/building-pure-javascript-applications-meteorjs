@@ -38,47 +38,55 @@ Meteor's code does not look like code of classic Node.js framework. It's an abst
 
 For example client code consists of helpers, events, sessions and templates:
 
-    Session.setDefault('counter', 0);
-    Template.hello.helpers({
-      counter: function() {
-        return Session.get('counter');
-      }
-    });
-    
-    Template.hello.events({
-      'click button': function() {
-        Session.set('counter', Session.get('counter') + 1);
-      }
-    });
+```javascript
+Session.setDefault('counter', 0);
+Template.hello.helpers({
+  counter: function() {
+    return Session.get('counter');
+  }
+});
+
+Template.hello.events({
+  'click button': function() {
+    Session.set('counter', Session.get('counter') + 1);
+  }
+});
+```
     
 Hello template:
 
-    <template name="hello">
-      <button>Click me</button>
-      <p>You have pressed the button {{counter}} times.</p>
-    </template>
+```html
+<template name="hello">
+  <button>Click me</button>
+  <p>You have pressed the button {{counter}} times.</p>
+</template>
+```
     
 I believe that code above is self-explanatory. You can easily find out what it does.
     
 We can communicate with server via Meteor calls on the client:
 
-    //client code
-    Meteor.call('sayHello', 'Tom', function(err, response) {
-      if (err)
-        console.log('An error ocured: ', err);
-      else
-        console.log('response from the server: ', response);
-    });
+```javascript
+//client code
+Meteor.call('sayHello', 'Tom', function(err, response) {
+  if (err)
+    console.log('An error ocured: ', err);
+  else
+    console.log('response from the server: ', response);
+});
+```
 
 Server code:
     
-    //server code
-    Meteor.methods({
-      sayHello: function(name) {
-        //here can be more code than just one return statement
-        return 'Hello ' + name;
-      }
-    });
+```javascript
+//server code
+Meteor.methods({
+  sayHello: function(name) {
+    //here can be more code than just one return statement
+    return 'Hello ' + name;
+  }
+});
+```
     
 Code above demonstrates communication between client and server via Meteor calls and methods. We define methods on the server and call them on the client. Read more about methods in [Meteor Docs](http://docs.meteor.com/#/full/meteor_methods).
 
