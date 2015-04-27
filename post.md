@@ -90,6 +90,17 @@ Meteor.methods({
     
 Code above demonstrates communication between client and server via Meteor calls and methods. We define methods on the server and call them on the client. Read more about methods in [Meteor Docs](http://docs.meteor.com/#/full/meteor_methods).
 
+Unlike Node.js, we can work with Mongo collections synchronously in Meteor:
+
+```javascript
+Messages = new Mongo.Collection('messages');
+Messages.insert({
+  text: 'We love Meteor',
+  timestamp: Date.now()
+});
+var msg = Messages.findOne({ text: 'We love Meteor' });
+```
+
 ## Learning resources for Meteor
 
 - [Official Meteor tutorial](https://www.meteor.com/install), [Meteor Docs](http://docs.meteor.com/#/full/), [Meteor forum](https://forums.meteor.com/).
